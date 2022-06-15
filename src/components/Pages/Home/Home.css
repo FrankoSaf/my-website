@@ -1,0 +1,41 @@
+.intro {
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-right: white 1px solid;
+  width: 50%;
+}
+.home {
+  display: flex;
+  height: calc(100vh - 160px);
+  background-color: #2f4ba1;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.intro__heading {
+  animation: slide 2s;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.intro__heading > .intro__heading-name {
+  animation: slide-top 2s;
+  display: inline-block;
+}
+@keyframes slide-top {
+  from {
+    transform: translate(100px, -100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

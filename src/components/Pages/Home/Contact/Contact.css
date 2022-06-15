@@ -1,0 +1,24 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 160px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+form > * {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 20px;
+}
+button {
+  width: 50%;
+  margin: 0 auto;
+}
